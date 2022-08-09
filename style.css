@@ -30,9 +30,10 @@ body {
   outline: none;
   cursor: pointer;
   border-radius: 3px;
-  margin: 20px 0;
   padding: 0;
   font-size: 18px;
+  background-color: transparent;
+  transition: transform 350ms ease-in;
 }
 
 .app {
@@ -43,24 +44,24 @@ body {
   align-items: center;
 }
 
-.header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.logo {
+  cursor: pointer;
+  transition: transform 350ms ease-in;
 }
 
-.nav {
+.button:hover,
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8px;
 }
 
-.item_btn {
-  background-color: transparent;
-}
-
-.item_img {
+.menu__img {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -78,14 +79,29 @@ body {
   background-color: var(--color-pink);
 }
 
-.contents {
+.items {
   width: 100%;
   height: 100%;
+  list-style: none;
+  padding: 0;
   overflow-y: auto;
 }
 
-.box {
+.item {
   width: 100%;
-  height: 100px;
-  background-color: #ffffff;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  margin-bottom: 6px;
+}
+
+.item__thumbnail {
+  width: 50px;
+  height: 50px;
+  margin: 0 28px;
+}
+
+.item__description {
+  font-size: 26px;
 }
