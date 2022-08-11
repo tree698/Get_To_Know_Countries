@@ -5,7 +5,7 @@ const app = document.querySelector('.app');
 
 loadItems() //
   .then((items) => {
-    // displayItems(items);
+    displayItems(items);
     setEventListener(items);
   })
   .catch((error) => alert('Items are not loaded or Network Error!'));
