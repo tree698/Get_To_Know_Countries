@@ -41,17 +41,17 @@ function setEventListener(items) {
     deleteItems();
     switch (event.target.className) {
       case 'menu__img tshirt':
-        return onClickTshirt(items);
+        return displaySelectedItems(items, 'type', 'tshirt');
       case 'menu__img pants':
-        return onClickPants(items);
+        return displaySelectedItems(items, 'type', 'pants');
       case 'menu__img skirt':
-        return onClickSkirt(items);
+        return displaySelectedItems(items, 'type', 'skirt');
       case 'button blue':
-        return onClickBlue(items);
+        return displaySelectedItems(items, 'color', 'blue');
       case 'button yellow':
-        return onClickYellow(items);
+        return displaySelectedItems(items, 'color', 'yellow');
       case 'button pink':
-        return onClickPink(items);
+        return displaySelectedItems(items, 'color', 'pink');
       case 'logo':
         return displayItems(items);
       default:
@@ -65,32 +65,7 @@ function deleteItems() {
   toBeDeleted.forEach((item) => item.remove());
 }
 
-function onClickTshirt(items) {
-  const tshirtItem = items.filter((item) => item.type === 'tshirt');
-  displayItems(tshirtItem);
-}
-
-function onClickPants(items) {
-  const pantsItem = items.filter((item) => item.type === 'pants');
-  displayItems(pantsItem);
-}
-
-function onClickSkirt(items) {
-  const skirtItem = items.filter((item) => item.type === 'skirt');
-  displayItems(skirtItem);
-}
-
-function onClickBlue(items) {
-  const blueItem = items.filter((item) => item.color === 'blue');
-  displayItems(blueItem);
-}
-
-function onClickYellow(items) {
-  const yellowItem = items.filter((item) => item.color === 'yellow');
-  displayItems(yellowItem);
-}
-
-function onClickPink(items) {
-  const pinkItem = items.filter((item) => item.color === 'pink');
-  displayItems(pinkItem);
+function displaySelectedItems(items, key, itemValue) {
+  const selectedItems = items.filter((item) => item[key] === itemValue);
+  displayItems(selectedItems);
 }
