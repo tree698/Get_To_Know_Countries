@@ -10,19 +10,29 @@
   <body>
     <section class="app">
       <img src="./img/logo.png" alt="logo" class="logo" />
-      <nav class="menu">
-        <button class="button">
-          <img src="./img/blue_t.png" alt="tshirt" class="menu__img tshirt" />
+      <nav class="nav">
+        <button class="btn" data-key="type" data-value="tshirt">
+          <img src="./img/blue_t.png" alt="tshirt" class="imgBtn" />
         </button>
-        <button class="button">
-          <img src="./img/blue_p.png" alt="pants" class="menu__img pants" />
+        <button class="btn" data-key="type" data-key="pants">
+          <img src="./img/blue_p.png" alt="pants" class="imgBtn" />
         </button>
-        <button class="button">
-          <img src="./img/blue_s.png" alt="skirt" class="menu__img skirt" />
+        <button class="btn" data-key="type" data-value="skirt">
+          <img src="./img/blue_s.png" alt="skirt" class="imgBtn" />
         </button>
-        <button class="button blue">Blue</button>
-        <button class="button yellow">Yellow</button>
-        <button class="button pink">Pink</button>
+        <button class="btn colorBtn blue" data-key="color" data-value="blue">
+          Blue
+        </button>
+        <button
+          class="btn colorBtn yellow"
+          data-key="color"
+          data-value="yellow"
+        >
+          Yellow
+        </button>
+        <button class="btn colorBtn pink" data-key="color" data-value="pink">
+          Pink
+        </button>
       </nav>
       <ul class="items"></ul>
     </section>
