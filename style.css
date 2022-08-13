@@ -107,3 +107,7 @@ body {
 .item__description {
   font-size: 26px;
 }
+
+.display {
+  display: none;
+}

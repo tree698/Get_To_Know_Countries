@@ -3,7 +3,7 @@
 loadItems() //
   .then((items) => {
     displayItems(items);
-    setEventListener(items);
+    setEventListener();
   });
 
 async function loadItems() {
@@ -19,28 +19,37 @@ function displayItems(items) {
 }
 
 function createHTMLString(item) {
-  return `<li class="item">
+  return `<li class="item ${item.type} ${item.color}">
             <img src="${item.image}" alt="${item.type}" class="item__thumbnail">
             <p class="item__description">${item.gender} ${item.size}</p>
           </li>`;
 }
 
-function setEventListener(items) {
+function setEventListener() {
   const log = document.querySelector('.logo');
   const nav = document.querySelector('.nav');
 
-  log.addEventListener('click', () => displayItems(items));
-  nav.addEventListener('click', (event) => onButtonClick(event, items));
+  log.addEventListener('click', () => {
+    const allOfItem = document.querySelectorAll(`.item`);
+    allOfItem.forEach((item) => {
+      item.classList.remove('display');
+    });
+  });
+  nav.addEventListener('click', (event) => onButtonClick(event));
 }
 
-function onButtonClick(event, items) {
-  const dataset = event.target.dataset;
-  const key = dataset.key;
-  const value = dataset.value;
-
-  if (key == null || value == null) {
+function onButtonClick(event) {
+  const value = event.target.dataset.value;
+  if (value == null) {
     return;
   }
 
-  displayItems(items.filter((item) => item[key] === value));
+  const allOfItem = document.querySelectorAll(`.item`);
+  allOfItem.forEach((item) => {
+    item.classList.remove('display');
+    const getArrayOfClassName = item.getAttribute('class').split(' ');
+    if (!getArrayOfClassName.includes(value)) {
+      item.classList.add('display');
+    }
+  });
 }
