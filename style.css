@@ -35,7 +35,7 @@ body {
   transition: transform 350ms ease-in;
 }
 
-.nav {
+.menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -108,6 +108,6 @@ body {
   font-size: 26px;
 }
 
-.display {
+.invisible {
   display: none;
 }

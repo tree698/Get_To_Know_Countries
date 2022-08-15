@@ -27,29 +27,31 @@ function createHTMLString(item) {
 
 function setEventListener() {
   const log = document.querySelector('.logo');
-  const nav = document.querySelector('.nav');
+  const menu = document.querySelector('.menu');
+  const arrayOfItem = document.querySelectorAll('.item');
 
-  log.addEventListener('click', () => {
-    const allOfItem = document.querySelectorAll(`.item`);
-    allOfItem.forEach((item) => {
-      item.classList.remove('display');
-    });
-  });
-  nav.addEventListener('click', (event) => onButtonClick(event));
+  log.addEventListener('click', () => displayAllItem(arrayOfItem));
+  menu.addEventListener('click', (event) =>
+    displayFilteredItem(event, arrayOfItem)
+  );
 }
 
-function onButtonClick(event) {
+function displayAllItem(array) {
+  array.forEach((arr) => {
+    arr.classList.remove('invisible');
+  });
+}
+
+function displayFilteredItem(event, array) {
   const value = event.target.dataset.value;
   if (value == null) {
     return;
   }
-
-  const allOfItem = document.querySelectorAll(`.item`);
-  allOfItem.forEach((item) => {
-    item.classList.remove('display');
-    const getArrayOfClassName = item.getAttribute('class').split(' ');
+  displayAllItem(array);
+  array.forEach((arr) => {
+    const getArrayOfClassName = arr.getAttribute('class').split(' ');
     if (!getArrayOfClassName.includes(value)) {
-      item.classList.add('display');
+      arr.classList.add('invisible');
     }
   });
 }
