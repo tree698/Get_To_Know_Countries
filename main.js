@@ -8,7 +8,7 @@ loadItems() //
   .catch(console.err);
 
 async function loadItems() {
-  const response = await fetch('../data/data.json');
+  const response = await fetch('./data/data.json');
   const json = await response.json();
   const items = json.items;
   return items;
