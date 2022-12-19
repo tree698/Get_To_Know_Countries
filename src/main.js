@@ -4,7 +4,8 @@ loadItems() //
   .then((items) => {
     displayItems(items);
     setEventListener();
-  });
+  })
+  .catch(console.err);
 
 async function loadItems() {
   const response = await fetch('../data/data.json');
