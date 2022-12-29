@@ -1,116 +1,130 @@
 {
   "items": [
     {
-      "type": "tshirt",
-      "gender": "female",
-      "size": "large",
-      "color": "pink",
-      "image": "./img/pink_t.png"
+      "type": "A",
+      "gender": "Armenia",
+      "size": "--Western Asia",
+      "color": "Asia",
+      "image": "./img/arm.png"
     },
     {
-      "type": "pants",
-      "gender": "male",
-      "size": "small",
-      "color": "blue",
-      "image": "./img/blue_p.png"
+      "type": "A",
+      "gender": "Azerbaijan",
+      "size": "--Western Asia",
+      "color": "Asia",
+      "image": "./img/aze.png"
     },
     {
-      "type": "pants",
-      "gender": "male",
-      "size": "large",
-      "color": "yellow",
-      "image": "./img/yellow_p.png"
+      "type": "B",
+      "gender": "Bangladesh",
+      "size": "--Southern Asia",
+      "color": "Asia",
+      "image": "./img/ban.png"
     },
     {
-      "type": "skirt",
-      "gender": "male",
-      "size": "large",
-      "color": "yellow",
-      "image": "./img/yellow_s.png"
+      "type": "B",
+      "gender": "Bhutan",
+      "size": "--Southern Asia",
+      "color": "Asia",
+      "image": "./img/bhu.png"
     },
     {
-      "type": "skirt",
-      "gender": "female",
-      "size": "small",
-      "color": "blue",
-      "image": "./img/blue_s.png"
+      "type": "C",
+      "gender": "China",
+      "size": "--Eastern Asia",
+      "color": "Asia",
+      "image": "./img/chi.png"
     },
     {
-      "type": "tshirt",
-      "gender": "male",
-      "size": "large",
-      "color": "blue",
-      "image": "./img/blue_t.png"
+      "type": "C",
+      "gender": "Cyprus",
+      "size": "--Western Asia",
+      "color": "Asia",
+      "image": "./img/cyp.png"
     },
     {
-      "type": "tshirt",
-      "gender": "male",
-      "size": "large",
-      "color": "yellow",
-      "image": "./img/yellow_t.png"
+      "type": "A",
+      "gender": "Algeria",
+      "size": "--Northern Africa",
+      "color": "Africa",
+      "image": "./img/alg.png"
     },
     {
-      "type": "pants",
-      "gender": "female",
-      "size": "small",
-      "color": "pink",
-      "image": "./img/pink_p.png"
+      "type": "A",
+      "gender": "Angola",
+      "size": "--Middle Africa",
+      "color": "Africa",
+      "image": "./img/ang.png"
     },
     {
-      "type": "tshirt",
-      "gender": "female",
-      "size": "large",
-      "color": "pink",
-      "image": "./img/pink_t.png"
+      "type": "B",
+      "gender": "Benin",
+      "size": "--Western Africa",
+      "color": "Africa",
+      "image": "./img/ben.png"
     },
     {
-      "type": "pants",
-      "gender": "male",
-      "size": "small",
-      "color": "blue",
-      "image": "./img/blue_p.png"
+      "type": "B",
+      "gender": "Botswana",
+      "size": "--Southern Africa",
+      "color": "Africa",
+      "image": "./img/bot.png"
     },
     {
-      "type": "pants",
-      "gender": "male",
-      "size": "large",
-      "color": "yellow",
-      "image": "./img/yellow_p.png"
+      "type": "C",
+      "gender": "Chad",
+      "size": "--Middle Africa",
+      "color": "Africa",
+      "image": "./img/chad.png"
     },
     {
-      "type": "skirt",
-      "gender": "male",
-      "size": "large",
-      "color": "yellow",
-      "image": "./img/yellow_s.png"
+      "type": "C",
+      "gender": "Cameroon",
+      "size": "--Middle Africa",
+      "color": "Africa",
+      "image": "./img/cam.png"
     },
     {
-      "type": "skirt",
-      "gender": "female",
-      "size": "small",
-      "color": "blue",
-      "image": "./img/blue_s.png"
+      "type": "A",
+      "gender": "Austria",
+      "size": "--Western Europe",
+      "color": "Europe",
+      "image": "./img/aus.png"
     },
     {
-      "type": "tshirt",
-      "gender": "male",
-      "size": "large",
-      "color": "blue",
-      "image": "./img/blue_t.png"
+      "type": "A",
+      "gender": "Albania",
+      "size": "--Southern Europe",
+      "color": "Europe",
+      "image": "./img/alb.png"
     },
     {
-      "type": "tshirt",
-      "gender": "male",
-      "size": "large",
-      "color": "yellow",
-      "image": "./img/yellow_t.png"
+      "type": "B",
+      "gender": "Belgium",
+      "size": "--Western Europe",
+      "color": "Europe",
+      "image": "./img/bel.png"
     },
     {
-      "type": "pants",
-      "gender": "female",
-      "size": "small",
-      "color": "pink",
-      "image": "./img/pink_p.png"
+      "type": "B",
+      "gender": "Belarus",
+      "size": "--Eastern Europe",
+      "color": "Europe",
+      "image": "./img/bela.png"
+    },
+    {
+      "type": "C",
+      "gender": "Croatia",
+      "size": "--Southern Europe",
+      "color": "Europe",
+      "image": "./img/cro.png"
+    },
+    {
+      "type": "C",
+      "gender": "Czechia",
+      "size": "--Eastern Europe",
+      "color": "Europe",
+      "image": "./img/cze.png"
     }
   ]
 }
