@@ -33,4 +33,4 @@
 
 
 ## 배포
-- [https://tree698.github.io/Get_To_Know_Countries/](https://tree698.github.io/Get_To_Know_Countries/)
+- [https://tree698.github.io/Get_To_Know_the_World/](https://tree698.github.io/Get_To_Know_the_World/)
